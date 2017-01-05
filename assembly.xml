@@ -1,0 +1,37 @@
+<assembly>
+	<id>fat</id>
+	<formats>
+		<format>jar</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<dependencySets>
+		<dependencySet>
+			<unpack>true</unpack>
+			<scope>runtime</scope>
+			<excludes>
+			</excludes>
+			<!-- very small jar -->
+			<includes>
+				<include>org.apache.commons:*</include>
+				<!--<include>org.apache.kafka:*</include>-->
+				<!--<include>org.apache.zookeeper:*</include>-->
+				<include>com.google.code.gson:*</include>
+				<!--<include>org.scala-lang.modules:*</include>-->
+				<!--<include>org.scala-lang:*</include>-->
+				<include>org.apache.spark:*</include>
+				<include>com.yammer.metrics:*</include>
+				<include>mysql:mysql-connector-java</include>
+				<include>com.google.code.gson:*</include>
+				<include>com.google.guava:*</include>
+				<!--<include>redis.clients:*</include>-->
+				<include>com.databricks:*</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+	<fileSets>
+		<fileSet>
+			<directory>${project.build.outputDirectory}</directory>
+			<outputDirectory>/</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>
