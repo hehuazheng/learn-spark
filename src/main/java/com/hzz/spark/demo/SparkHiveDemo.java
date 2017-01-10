@@ -3,9 +3,6 @@ package com.hzz.spark.demo;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.SparkSession;
 
-/**
- * Created by hejf on 2017/1/6.
- */
 public class SparkHiveDemo {
     /**
      * # ./bin/spark-submit --driver-class-path /opt/hive-2.1.0/lib/mysql-connector-java-5.1.27.jar

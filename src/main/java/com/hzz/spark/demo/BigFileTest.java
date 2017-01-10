@@ -4,9 +4,6 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
-/**
- * Created by hejf on 2017/1/6.
- */
 public class BigFileTest {
     public static void main(String[] args) {
         SparkConf sparkConf = new SparkConf().setAppName("BigFileTest");

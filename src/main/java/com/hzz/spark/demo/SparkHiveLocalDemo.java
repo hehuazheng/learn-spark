@@ -2,9 +2,6 @@ package com.hzz.spark.demo;
 
 import org.apache.spark.sql.SparkSession;
 
-/**
- * Created by hejf on 2017/1/6.
- */
 public class SparkHiveLocalDemo {
     public static void main(String[] args) {
         System.out.println("args:"+args);
