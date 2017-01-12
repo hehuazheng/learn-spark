@@ -15,7 +15,8 @@ import java.util.List;
 
 public class WordCount {
     public static void main(String[] args) {
-        SparkConf sparkConf = new SparkConf().setAppName("wordCount");
+        System.setProperty("hadoop.home.dir", "C:\\dev\\hadoop-2.7.2");
+        SparkConf sparkConf = new SparkConf().setAppName("wordCount").setMaster("local[3]");
         JavaSparkContext ctx = new JavaSparkContext(sparkConf);
         JavaRDD<String> linesRdd = ctx.textFile(args[0], 1);
         linesRdd.cache();
